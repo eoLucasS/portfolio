@@ -42,7 +42,7 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
   <img src="https://img.shields.io/badge/-Twitter-000?style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/Evander_Inacio"/> 
  </a>
 
- <a href="https://i.pinimg.com/originals/c3/a2/5d/c3a25dd8c9c80a6b0373bd56b1c77f6a.jpg" alt="Portfolio">
+ <a href="https://portfolio-lucaslopes.vercel.app" alt="Portfolio">
   <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=FFF&link=https://i.pinimg.com/originals/c3/a2/5d/c3a25dd8c9c80a6b0373bd56b1c77f6a.jpg"/>
  </a>
 
