@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lucas Lopes - Segurança da Informação - Front End</title>
+  <title>Portifolio Lucas Lopes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  
-  
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="manifest" href="assets/img/site.webmanifest">
 
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
- 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -30,15 +26,11 @@
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
-
-
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
- 
   <header id="header">
     <div class="d-flex flex-column">
 
@@ -54,15 +46,27 @@
         </div>
       </div>
 
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="index.html#about"><i class="bx bx-user"></i> <span>Sobre mim</span></a></li>
-          <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Curriculum Vitae</span></a></li>
-           <li><a href="index.html#skills"><i class="bx bx-code-alt"></i> <span>My skills</span></a></li>
-          <li><a href="index.html#services"><i class="bx bx-server"></i><span>Projects</span></a></li>
-          <li><a href="index.html#testimonials"><i class="bx bx-comment"></i><span>Feedback</span></a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i><span>Contact me</span></a></li>
+<nav class="nav-menu">
+  <ul>
+    <li class="active"><a href="#" onclick="scrollToTop()"><i class="bx bx-home"></i> <span>Início</span></a></li>
+    <li><a href="#about"><i class="bx bx-user"></i> <span>Sobre mim</span></a></li>
+    <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Curriculum Vitae</span></a></li>
+    <li><a href="#skills"><i class="bx bx-code-alt"></i> <span>Minhas Habilidades</span></a></li>
+    <li><a href="#services"><i class="bx bx-server"></i><span>Projetos</span></a></li>
+    <li><a href="#testimonials"><i class="bx bx-comment"></i><span>Feedback</span></a></li>
+    <li><a href="#contact"><i class="bx bx-envelope"></i><span>Entrar em contato</span></a></li>
+  </ul>
+</nav>
+
+<script>
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
 
         </ul>
       </nav>
@@ -107,21 +111,24 @@
       </div>
     </section>
 
-    <section id="resume" class="resume">
-      <div class="container">
+<section id="resume" class="resume">
+  <div class="container">
 
-        <div class="section-title">
-          <h2>Curriculum Vitae</h2>
-          
+    <div class="section-title">
+      <h2>Curriculum Vitae</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title">Clicar em "Baixar PDF"</h3>
+        <div class="resume-item pb-0">
+          <a href="https://cdn.discordapp.com/attachments/1104525551898734632/1117525620927238254/CV.pdf" download class="btn btn-primary btn-lg">Baixar PDF</a>
         </div>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Clicar em "Baixar PDF"</h3>
-            <div class="resume-item pb-0">
-              <h4>⬇⬇⬇⬇</h4>
-              <a href="https://cdn.discordapp.com/attachments/1104525551898734632/1117525620927238254/CV.pdf" download>Baixar PDF</a>
-    </section>
+  </div>
+</section>
 
     <section id="skills" class="skills section-bg">
       <div class="container">
@@ -193,6 +200,13 @@
               <span class="skill">Microsoft Windows <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">AWS CLOUD <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
