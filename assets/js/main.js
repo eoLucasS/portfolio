@@ -1,7 +1,6 @@
 !(function($) {
   "use strict";
 
-
   if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
     typed_strings = typed_strings.split(',');
@@ -181,5 +180,21 @@
   $(window).on('load', function() {
     aos_init();
   });
+
+  var user = "lucascontato1419";
+  var domain = "gmail.com";
+  var link = user + "@" + domain;
+  var encodedLink = "";
+
+  for (var i = 0; i < link.length; i++) {
+    encodedLink += "&#x" + link.charCodeAt(i).toString(16) + ";";
+  }
+
+  var user = "lucascontato1419";
+  var domain = "gmail.com";
+  var link = user + "@" + domain;
+
+  var emailElement = document.getElementById("email-address");
+  emailElement.innerHTML = "<a href='mailto:" + link + "'>" + link + "</a>";
 
 })(jQuery);
