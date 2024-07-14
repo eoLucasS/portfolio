@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portifolio Lucas Lopes</title>
+  <title>Portfolio Lucas Lopes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -122,7 +122,7 @@ function scrollToTop() {
       <div class="col-lg-6" data-aos="fade-up">
         <h3 class="resume-title">Clicar em "Baixar PDF"</h3>
         <div class="resume-item pb-0">
-          <a href="https://cdn.discordapp.com/attachments/1104525551898734632/1123349981156347944/CV.pdf" download class="btn btn-primary btn-lg">Baixar PDF</a>
+          <a href="assets\cv/CV.pdf" download class="btn btn-primary btn-lg">Baixar PDF</a>
         </div>
       </div>
     </div>
@@ -415,11 +415,18 @@ function scrollToTop() {
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Lucas Lopes da Silva 2023</span></strong>
+        &copy; Copyright <strong>Lucas Lopes da Silva <span id="year"></span></strong>
       </div>
-  
     </div>
-  </footer>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var yearElement = document.getElementById("year");
+    var currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+  });
+</script>
 
   <a href="index.html#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 

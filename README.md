@@ -1,10 +1,10 @@
 <h1 align="center">
-  Portfólio <img width="25px" src="https://cdn.discordapp.com/attachments/1049167666876776458/1049167722082226186/icon.png"/>
+  Portfólio <img width="25px" src="assets\img/icon.svg"/>
 </h1>
 
 <br>
 
-![Resultado final do projeto](https://cdn.discordapp.com/attachments/1104525551898734632/1117871128652828692/image.png)
+![Resultado final do projeto](assets\img/preview.png)
 
 <br>
 
@@ -35,27 +35,27 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
 <p align="left">
 
  <a href="https://www.linkedin.com/in/lucaslopesdasilva/" alt="Linkedin">
-  <img src="https://img.shields.io/badge/-Linkedin-000?style=for-the-badge&logo=Linkedin&logoColor=0A66C2&link=https://www.linkedin.com/in/evander-inacio"/> 
+  <img src="https://img.shields.io/badge/-Linkedin-000?style=for-the-badge&logo=Linkedin&logoColor=0A66C2&link=https://www.linkedin.com/in/lucaslopesdasilva/"/> 
  </a>
   
  <a href="https://twitter.com/eoLucasS114" alt="Twitter">
-  <img src="https://img.shields.io/badge/-Twitter-000?style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/Evander_Inacio"/> 
+  <img src="https://img.shields.io/badge/-Twitter-000?style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/eoLucasS114"/> 
  </a>
 
- <a href="https://portfolio-lucaslopes.vercel.app" alt="Portfolio">
-  <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=FFF&link=https://i.pinimg.com/originals/c3/a2/5d/c3a25dd8c9c80a6b0373bd56b1c77f6a.jpg"/>
+ <a href="https://portfolio-lucaslopes.vercel.app/" alt="Portfolio">
+  <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=FFF&link=https://portfolio-lucaslopes.vercel.app/"/>
  </a>
 
  </p>
  
-## 💻 Autor<br>
+## 💻 Colaboradores<br>
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/eoLucasS">
-        <img src="https://cdn.discordapp.com/attachments/1049167666876776458/1049179325410312292/tdi.png" width="100px;" /><br>
+      <a href="https://www.linkedin.com/in/lucaslopesdasilva/">
+        <img src="https://avatars.githubusercontent.com/u/119815116?v=4" width="100px;" /><br>
         <sub>
-          <b>Lucas Lopes</b>
+          <b>Lucas Silva</b>
         </sub>
       </a>
     </td>
@@ -64,4 +64,4 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
 
 -----
 
-  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/lucaslopesdasilva/">Lucas Lopes</a> ☕</h3>
+<h3 align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/lucaslopesdasilva/">Lucas Lopes da Silva</a> ☕</h3>
