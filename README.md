@@ -4,7 +4,9 @@
 
 <br>
 
-![Resultado final do projeto](assets\img/preview.png)
+<p align="center">
+  <img src="assets\img/preview.png" width="650" height="338">
+</p>
 
 <br>
 
