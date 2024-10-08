@@ -1,0 +1,104 @@
+/* Arquivo: _blog.scss */
+
+#s-apresentacao {
+  padding: $gap-7 0;
+  background-color: $bg-main;
+  text-align: center;
+
+  .grid-layout {
+    h1 {
+      color: $color-white;
+      font-size: 4rem;
+      font-weight: 500;
+
+      span {
+        color: $color-main;
+      }
+    }
+
+    p {
+      color: $color-gray;
+      font-size: 1.8rem;
+      margin-top: $gap-3;
+    }
+  }
+}
+
+.blog-main {
+  padding-top: 100px; /* Ajuste conforme a altura real do header */
+}
+
+
+#s-posts {
+  @include spacing-section();
+  background-color: $bg-main;
+
+  .grid-layout {
+    h2 {
+      @include title-section();
+
+      span {
+        color: $color-main;
+      }
+    }
+
+    #posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $gap-4;
+      margin-top: $gap-4;
+
+      .post {
+        background-color: $bg-secondary;
+        border: 1px solid $bg-border;
+        border-radius: 4px;
+        padding: $gap-3;
+        flex: 1 1 calc(50% - $gap-4);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include responsive-mobile {
+          flex: 1 1 100%;
+        }
+
+        h3 {
+          color: $color-white;
+          font-size: 2.4rem;
+          margin-bottom: $gap-2;
+        }
+
+        p {
+          color: $color-gray;
+          font-size: 1.8rem;
+          flex-grow: 1;
+        }
+
+        .tags {
+          margin-top: $gap-2;
+
+          .tag {
+            display: inline-block;
+            background-color: $color-main;
+            color: $color-white;
+            padding: $gap-1 $gap-2;
+            border-radius: 4px;
+            margin-right: $gap-1;
+            font-size: 1.4rem;
+          }
+        }
+
+        .read-more {
+          margin-top: $gap-2;
+          color: $color-main;
+          font-size: 1.6rem;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

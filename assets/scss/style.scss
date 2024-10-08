@@ -1,0 +1,23 @@
+@import "./variables", "./reset", "./menu", "./home", "./about", "./experience",
+      "./projects", "./security", "./skills", "./footer", "./blog", "./post";
+
+.typewriter:after {
+  content: "|";
+  margin-left: $gap-1;
+  opacity: 1;
+  animation: blink 1s infinite;
+  color: $color-main;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.grid-layout {
+  @include grid-layout();
+}

@@ -1,200 +1,111 @@
-!(function($) {
-  "use strict";
+import { initScrollReveal } from "./scrollReveal.js";
+import { hoverChangeExperience } from "./hoverChangeExperience.js";
+import { typeWrite } from "./typeWrite.js";
+import { hoverChangeDescription } from "./hoverChangeDescription.js";
+import { menu } from "./menu.js";
 
-  if ($('.typed').length) {
-    var typed_strings = $(".typed").data('typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
+menu();
+initScrollReveal();
+typeWrite(document.querySelector(".typewriter"));
+
+hoverChangeExperience(
+  ".engeformenergia",
+  `Como Assistente de T.I de Infraestrutura, atuo para garantir a continuidade e eficiência dos sistemas, sempre buscando soluções que impulsionem a inovação tecnológica da empresa. Com uma abordagem focada na segurança e na evolução dos processos internos, meu objetivo é contribuir para a robustez da infraestrutura e apoiar o crescimento sustentável do negócio, alinhando as necessidades organizacionais às melhores práticas do setor.`,
+  "Assistente de T.I",
+  "Engeform Energia",
+  "Nov 2024 - Atual"
+);
+
+hoverChangeExperience(
+  ".engeformenergiaestag",
+  `Como estagiário de T.I na Engeform Energia, atuei no suporte e na manutenção de sistemas críticos da empresa, garantindo a continuidade das operações tecnológicas. Colaborei com a equipe em iniciativas voltadas à otimização de processos e à implementação de melhorias estruturais, sempre com foco na inovação e na segurança. Além disso, participei de projetos que fortaleceram a eficiência e a gestão de recursos de T.I.`,
+  "Estagiário de T.I",
+  "Engeform Energia",
+  "Set 2023 - Out 2024"
+);
+
+// hoverChangeExperience(
+//   ".y",
+//   `texto aqui`,
+//   "cargo exercido",
+//   "nome da empresa",
+//   "Jun 2021 - Jan 2022 (8 meses)"
+// );
+
+// hoverChangeExperience(
+//   ".z",
+//   `texto aqui`,
+//   "cargo exercido",
+//   "nome da empresa",
+//   "Jun 2021 - Jan 2022 (8 meses)"
+// );
+
+// Descrições atualizadas para cada ferramenta
+hoverChangeDescription(
+  ".kali",
+  "Kali Linux é uma distribuição baseada em Linux projetada especificamente para testes de penetração e auditorias de segurança. Vem pré-carregada com uma vasta gama de ferramentas de segurança, facilitando a identificação e exploração de vulnerabilidades em diversos sistemas."
+);
+
+hoverChangeDescription(
+  ".windows",
+  "Windows é um sistema operacional amplamente utilizado em ambientes corporativos e pessoais. Conhecer suas particularidades e vulnerabilidades é essencial para realizar testes de segurança eficazes e implementar medidas de proteção adequadas."
+);
+
+hoverChangeDescription(
+  ".python",
+  "Python é uma linguagem de programação versátil e poderosa, amplamente utilizada em scripts de automação, desenvolvimento de ferramentas de pentesting e análise de dados. Sua sintaxe clara e vasta biblioteca a tornam uma escolha preferida entre profissionais de segurança."
+);
+
+hoverChangeDescription(
+  ".javascript",
+  "JavaScript é uma linguagem de programação fundamental para o desenvolvimento de aplicações web dinâmicas. No contexto de segurança, é essencial para testar a robustez de aplicações contra ataques como XSS e injeções de código."
+);
+
+hoverChangeDescription(
+  ".bash",
+  "Bash é um shell de comando utilizado em sistemas Unix/Linux para automatizar tarefas e administrar sistemas. Dominar Bash é crucial para escrever scripts eficientes que auxiliam em processos de pentesting e análise de segurança."
+);
+
+hoverChangeDescription(
+  ".burpsuite",
+  "Burp Suite é uma plataforma integrada para testes de segurança de aplicações web. Oferece ferramentas avançadas para interceptar, modificar e analisar o tráfego HTTP/S, facilitando a identificação e exploração de vulnerabilidades em aplicações web."
+);
+
+hoverChangeDescription(
+  ".git",
+  "Git é um sistema de controle de versão que permite gerenciar e acompanhar mudanças em projetos de desenvolvimento de software. No contexto de segurança, facilita a colaboração e o versionamento de scripts e ferramentas personalizadas de pentesting."
+);
+
+hoverChangeDescription(
+  ".nmap",
+  "Nmap é uma ferramenta poderosa de scanner de rede utilizada para descobrir hosts, serviços e vulnerabilidades em redes. É essencial para mapear a infraestrutura de TI e identificar pontos fracos que podem ser explorados durante um teste de penetração."
+);
+
+hoverChangeDescription(
+  ".metasploit",
+  "Metasploit é um framework robusto para desenvolvimento e execução de exploits. Facilita a identificação e exploração de vulnerabilidades, além de oferecer ferramentas para pós-exploração e avaliação de sistemas comprometidos."
+);
+
+hoverChangeDescription(
+  ".nessus",
+  "Nessus é um scanner de vulnerabilidades líder no mercado, utilizado para identificar falhas de segurança em sistemas, redes e aplicações. Fornece relatórios detalhados que ajudam na priorização e correção das vulnerabilidades encontradas."
+);
+
+hoverChangeDescription(
+  ".sqlmap",
+  "SQLMap é uma ferramenta automatizada para detecção e exploração de vulnerabilidades de injeção SQL em aplicações web. Simplifica o processo de identificação de falhas em bancos de dados, permitindo a extração de informações sensíveis de forma eficiente."
+);
+
+hoverChangeDescription(
+  ".nikto",
+  "Nikto é um scanner de servidores web que realiza varreduras abrangentes para identificar vulnerabilidades, configurações incorretas e arquivos expostos. É essencial para avaliar a segurança de servidores web e garantir que estejam protegidos contra ameaças comuns."
+);
+
+// Atualizar ano do Copyright no index.html
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) {
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
   }
-
-  // Rolagem suave para o menu de navegação e links com classe .scrollto
-  $(document).on('click', '.nav-menu a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      e.preventDefault();
-      var target = $(this.hash);
-      if (target.length) {
-        var scrollto = target.offset().top;
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        }
-        return false;
-      }
-    }
-  });
-
-  // Ativa a rolagem suave ao carregar a página com links de hash na URL
-  $(document).ready(function() {
-    if (window.location.hash) {
-      var initial_nav = window.location.hash;
-      if ($(initial_nav).length) {
-        var scrollto = $(initial_nav).offset().top;
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
-      }
-    }
-  });
-
-  $(document).on('click', '.mobile-nav-toggle', function(e) {
-    $('body').toggleClass('mobile-nav-active');
-    $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-  });
-
-  $(document).click(function(e) {
-    var container = $(".mobile-nav-toggle");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-      }
-    }
-  });
-
-  // Estado ativo da navegação ao rolar
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
-
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
-
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
-
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
-      }
-    });
-  });
-
-  // Botão "Voltar ao topo"
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-
-  $('.back-to-top').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
-    return false;
-  });
-
-  // Contador com jQuery
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-  // Seção de habilidades
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
-      $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    });
-  }, {
-    offset: '80%'
-  });
-
-  // Isotope e filtragem do portfólio
-  $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
-      });
-      aos_init();
-    });
-
-    // Inicializa o venobox (recurso de lightbox usado no portfólio)
-    $(document).ready(function() {
-      $('.venobox').venobox();
-    });
-  });
-
-  // Carrossel de depoimentos (usa a biblioteca Owl Carousel)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
-
-  // Carrossel de detalhes do portfólio
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
-  // Inicializa o AOS
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out-back",
-      once: true
-    });
-  }
-  $(window).on('load', function() {
-    aos_init();
-  });
-
-  var user = "lucascontato1419";
-  var domain = "gmail.com";
-  var link = user + "@" + domain;
-  var encodedLink = "";
-
-  for (var i = 0; i < link.length; i++) {
-    encodedLink += "&#x" + link.charCodeAt(i).toString(16) + ";";
-  }
-
-  var user = "lucascontato1419";
-  var domain = "gmail.com";
-  var link = user + "@" + domain;
-
-  var emailElement = document.getElementById("email-address");
-  emailElement.innerHTML = "<a href='mailto:" + link + "'>" + link + "</a>";
-
-})(jQuery);
+});

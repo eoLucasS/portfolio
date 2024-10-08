@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lucas Silva" />
+    <meta
+      name="description"
+      content="Blog pessoal de Lucas Silva sobre segurança da informação, Ethical Hacking e desenvolvimento backend."
+    />
+    <meta
+      name="keywords"
+      content="blog, segurança da informação, Ethical Hacker, Penetration Tester, Lucas Silva, cibersegurança, desenvolvimento backend, TI"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#986dff" />
+    <meta name="copyright" content="Lucas Silva 2024" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:title" content="Blog // Lucas Silva" />
+    <meta
+      property="og:description"
+      content="Artigos e dicas sobre segurança da informação e desenvolvimento backend."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/image/logo-page1.svg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../assets/image/logo-page1.svg" />
+    <link rel="apple-touch-icon" href="../assets/image/logo-page1.svg" />
+    <link rel="canonical" href="https://lucas.com/blog" />
+    <title>Blog // Lucas Silva</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="grid-layout">
+        <nav>
+          <img
+            src="../assets/image/logo-lucas.png"
+            alt="Logo de Lucas Silva"
+            width="150"
+            height="75"
+          />
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Setup</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="blog-main">
+      <!-- Seção de Apresentação -->
+      <section id="s-apresentacao">
+        <div class="grid-layout">
+          <h1 class="delayMediumReveal">
+            Bem-vindo ao meu <span>Blog</span>
+          </h1>
+          <p class="delayLargeReveal">
+            Compartilhando conhecimentos sobre segurança da informação, Ethical Hacking e desenvolvimento backend.
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção de Posts -->
+      <section id="s-posts">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Postagens Recentes <span>.</span></h2>
+          <div id="posts">
+            <article class="post intervalCardReveal">
+              <h3>Introdução ao Ethical Hacking: Conceitos e Práticas Essenciais</h3>
+              <p>
+                Entenda o que é Ethical Hacking, sua importância e as principais práticas envolvidas na área.
+              </p>
+              <div class="tags">
+                <span class="tag">Ethical Hacking</span>
+                <span class="tag">Segurança</span>
+                <span class="tag">Penetration Testing</span>
+              </div>
+              <a href="post1.html" class="read-more">Leia mais</a>
+            </article>
+
+            <!-- Postagem 2 -->
+            <article class="post intervalCardReveal">
+              <h3>Como Senhas Fracas Podem Colocar Sua Vida Digital em Risco</h3>
+              <p>
+                Descubra por que usar senhas fracas é um grande risco e como proteger suas contas online.
+              </p>
+              <div class="tags">
+                <span class="tag">Senhas</span>
+                <span class="tag">Segurança</span>
+                <span class="tag">Penetration Testing</span>
+              </div>
+              <a href="post2.html" class="read-more">Leia mais</a>
+            </article>
+
+            <!-- Mais posts podem ser adicionados aqui seguindo o mesmo padrão -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="grid-layout">
+        <p>
+          © <span id="current-year"></span> 
+          <a href="https://portfolio-lucaslopes.vercel.app/" rel="noopener" target="_blank">
+            portfolio-lucaslopes.vercel.app
+          </a>
+          | Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
+    <script>
+      // Atualizar o ano atual no rodapé
+      document.addEventListener("DOMContentLoaded", () => {
+        const yearSpan = document.getElementById("current-year");
+        if (yearSpan) {
+          const currentYear = new Date().getFullYear();
+          yearSpan.textContent = currentYear;
+        }
+      });
+    </script>
+  </body>
+</html>

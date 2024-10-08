@@ -1,0 +1,35 @@
+/* Arquivo: _post.scss */
+
+#s-post-content {
+  padding: $gap-7 0;
+  background-color: $bg-main;
+  color: $color-white;
+
+  .grid-layout {
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: $gap-3;
+
+      @include responsive-tablet {
+        font-size: 3.2rem;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $color-gray;
+      margin-bottom: $gap-3;
+    }
+
+    article {
+      font-size: 1.8rem;
+      line-height: 160%;
+      color: $color-gray;
+
+      p {
+        margin-bottom: $gap-3;
+      }
+    }
+  }
+}

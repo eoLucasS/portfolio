@@ -1,449 +1,497 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lucas Silva" />
+    <meta
+      name="description"
+      content="Meu nome é Lucas, estudante de Ciência da Computação apaixonado por segurança da informação, com foco em aprender e aplicar novos conhecimentos em TI e cibersegurança, atualmente me preparando para a certificação DCPT pela Desec Security."
+    />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, backend, lucas silva, cybersecurity, programador, lucas lopes, back-end, white hat, segurança, lucas, website, portfólio, ciência da computação, TI, segurança da informação, cibersegurança, desenvolvimento web, Python, hacker ético, DCPT, segurança digital, estudante de TI, DevOps, tecnologia, Entra ID, gestão de segurança, projetos de TI, programação, aprendizado contínuo"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00FFFF" />
+    <meta name="copyright" content="Lucas Silva 2024" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta
+      property="og:image"
+      content="assets/image/preview.png"
+    />
+    <meta property="og:title" content="Portfólio // Lucas Silva" />
+    <meta property="og:description" content="Portfólio // Lucas Silva" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/logo-page1.svg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/image/logo-page1.svg" />
+    <link rel="apple-touch-icon" href="assets/image/logo-page1.svg" />
+    <link rel="canonical" href="https://portfolio-lucaslopes.vercel.app" />
+    <title>Portfólio // Lucas Silva</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <body>
+    <header>
+      <div class="grid-layout">
+        <nav>
+          <img
+            src="assets/image/logo-lucas.png"
+            alt="Logo de Lucas Silva"
+            width="50px"
+            height="25px"
+          />
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="blog/index.html" rel="noopener noreferrer">Blog</a></li>
+            <li><a href="#" rel="noopener noreferrer">Setup</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>    
 
-  <title>Portfolio Lucas Lopes</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/site.webmanifest">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Lucas Lopes</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a id="email-link" href="mailto:lucascontato1419@gmail.com" class="email" target="_blank">
-            <i class="icofont-envelope"></i>
-          </a> 
-          <a href="https://twitter.com/eoLucasS114" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/lucas.revolt/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/eoLucasS" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://linkedin.com/in/lucaslopesdasilva/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>      
-
-<nav class="nav-menu">
-  <ul>
-    <li class="active"><a href="#" onclick="scrollToTop()"><i class="bx bx-home"></i> <span>Início</span></a></li>
-    <li><a href="#about"><i class="bx bx-user"></i> <span>Sobre mim</span></a></li>
-    <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Curriculum Vitae</span></a></li>
-    <li><a href="#skills"><i class="bx bx-code-alt"></i> <span>Minhas Habilidades</span></a></li>
-    <li><a href="#services"><i class="bx bx-server"></i><span>Projetos</span></a></li>
-    <li><a href="#testimonials"><i class="bx bx-comment"></i><span>Feedback</span></a></li>
-    <li><a href="#contact"><i class="bx bx-envelope"></i><span>Entrar em contato</span></a></li>
-  </ul>
-</nav>
-
-<script>
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-</script>
-
-
-        </ul>
-      </nav>
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-    </div>
-  </header>
-
- 
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Lucas Lopes da Silva</h1>
-      <p> <span class="typed" data-typed-items="Estudando o curso da Desec Security no momento, E novas linguagens de programação 😄."></span></p>
-    </div>
-  </section>
-
-  <main id="main">
-
+    <main>
+      <section id="s-home">
+        <div class="grid-layout">
+          <div id="home">
+            <div id="home-container-text">
+              <h1 class="delayMediumReveal">
+                Criando soluções em 
+                <span>segurança da informação</span> e desenvolvimento backend.
+              </h1>
+              <p class="typewriter">
+                Combinando desenvolvimento backend e segurança da informação para criar sistemas robustos e escaláveis.
+              </p>
     
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Sobre mim</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              <a
+                href="https://github.com/eoLucasS"
+                target="_blank"
+                class="delayExtraBigReveal"
+              >
+                Conheça meus projetos
+              </a>
+            </div>
+    
+            <img
+              src="assets/image/logo.png"
+              alt="logo Lucas"
+              id="logo"
+              width="500px"
+              height="500px"
+            />
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Lucas Lopes da Silva</h3>
-            <p class="font-italic">
-              Olá! Sou o Lucas, de São Paulo, Brasil. Sou apaixonado por computadores desde muito jovem e me interessei por programação no dia em que descobri que poderia criar meus próprios sites. Hoje, sou desenvolvedor web na área de front-end, além de ser um hacker ético certificado pelo Técnicas de Invasão. Nos últimos meses, comecei a estudar um curso pela Desec Security e busco cada vez mais aprofundar-me nessa área de hacking ético. Você pode conferir mais sobre minha experiência e os projetos que realizei no meu currículo e portfólio no GitHub. Alguns dos projetos mais recentes em que trabalhei estão listados na página de projetos.
+        </div>
+      </section>
+    </main>    
+
+      <section id="s-about">
+        <div class="grid-layout">
+          <div>
+            <div id="creator-photo" class="delayMediumReveal">
+              <h3 class="delayExtraBigReveal">Ciência da Computação</h3>
+            </div>
+            <div>
+              <h4 class="delayMediumReveal">Quem sou</h4>
+              <h2 class="delaySmallReveal">Lucas Silva</h2>
+              <h3 class="delayMediumReveal">
+                Ethical Hacker & Penetration Tester
+              </h3>
+
+              <p class="delayLargeReveal">
+                Meu nome é Lucas Silva, atualmente estou focado em estudar cibersegurança para me especializar na área. Enquanto estudo para obter a certificação DCPT pela Desec Security, aprimoro minhas habilidades em testes de invasão, análise de vulnerabilidades e segurança de redes. Meu objetivo é desenvolver soluções eficazes para proteger sistemas e dados contra ameaças cibernéticas.
+              </p>
               
-            </p>
+              <nav class="delayLargeReveal">
+                <ul>
+                  <a
+                    href="https://www.instagram.com/lucas.revolt/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/instagram.png"
+                        alt="Ícone do Instagram"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://www.linkedin.com/in/lucaslopesdasilva/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/linkedin.png"
+                        rel="noopener"
+                        alt="Ícone do LinkedIn"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://portfolio-lucaslopes.vercel.app/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/laptop.png"
+                        alt="Ícone de um laptop"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://discord.com/users/1061061379773181953"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/discord.png"
+                        alt="Ícone do Discord"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://github.com/eoLucasS"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/github.png"
+                        alt="Ícone do GitHub"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="mailto:lucascontato1419@gmail.com"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/gmail.png"
+                        alt="Ícone do Behance"
+                      /></li
+                  ></a>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-<section id="resume" class="resume">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Curriculum Vitae</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6" data-aos="fade-up">
-        <h3 class="resume-title">Clicar em "Baixar PDF"</h3>
-        <div class="resume-item pb-0">
-          <a href="assets\cv/CV.pdf" download class="btn btn-primary btn-lg">Baixar PDF</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Por meio de meus estudos, ganhei uma sólida compreensão dos conceitos de programação e desenvolvimento da Web e dediquei muito do meu tempo livre para aplicar esses conceitos.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Adobe Photoshop <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+      <section id="s-experience">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Experiências <span>.</span></h2>
+          <div id="experience">
+            <div
+              class="option-experience intervalCardReveal"
+              id="experience-company"
+            >
+              <div class="company engeformenergia activeExperience">
+                <h3>Assistente de T.I</h3>
               </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Wondershare Filmora <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="company engeformenergiaestag">
+                <h3>Estagiário de T.I</h3>
               </div>
-            </div>
-           
-            <div class="progress">
-              <span class="skill">HTML/CSS<i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <!--<div class="company y">
+                <h3>Em breve...</h3>
               </div>
+              <div class="company z">
+                <h3>Em breve...</h3>
+              </div>-->
             </div>
-
-            <div class="progress">
-              <span class="skill">Git/Github <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="text-experience intervalCardReveal">
+              <div>
+                <h4 class="titleExperience">
+                  Assistente de T.I
+                </h4>
+                <p class="dateExperience">Nov 2024 - Atual</p>
               </div>
+              <h5 class="companyExperience">Engeform Energia</h5>
+              <p class="changeExperience">
+                Como Assistente de T.I de Infraestrutura, atuo para garantir a continuidade e eficiência dos sistemas, sempre buscando soluções que impulsionem a inovação tecnológica da empresa. Com uma abordagem focada na segurança e na evolução dos processos internos, meu objetivo é contribuir para a robustez da infraestrutura e apoiar o crescimento sustentável do negócio, alinhando as necessidades organizacionais às melhores práticas do setor. 
+              </p>
             </div>
-
-            <div class="progress">
-              <span class="skill">Hospedagem de site <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Responsive Web design <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
+        </div>
+      </section>      
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <section id="s-projects">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
+          <div id="projects">
+            <article class="intervalCardReveal visionquest">
+              <h3>VisionQuest</h3>
+              <p>
+                Jogo educacional interativo que utiliza visão computacional para ensinar matemática de forma inclusiva, com reconhecimento de gestos e perguntas dinâmicas.
+              </p>
 
+              <a
+                href="https://github.com/eoLucasS/VisionQuest"
+                rel="noopener"
+                target="_blank"
+                id="visionquest"
+                >Visualizar projeto
+              </a>
+            </article>
 
-            <div class="progress">
-              <span class="skill">Linux <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+            <article class="intervalCardReveal trackit">
+              <h3>TrackIT</h3>
+              <p>
+                Sistema de gerenciamento de equipamentos de TI com automação de controle, dashboards interativos e integração com SQLite para alocação, devolução e monitoramento de ativos.
+              </p>
 
-            <div class="progress">
-              <span class="skill">Microsoft Windows <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+              <a
+                href="https://github.com/eoLucasS/TrackIT"
+                rel="noopener"
+                target="_blank"
+                id="trackit"
+                >Visualizar projeto
+              </a>
+            </article>
 
-            <div class="progress">
-              <span class="skill">AWS CLOUD <i class="val">45%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+            <article class="intervalCardReveal benchmarkdealgoritmos">
+              <h3>Benchmark de Algoritmos</h3>
+              <p>
+                Projeto em Java para comparar a eficiência de busca e ordenação de jogos entre uma ArrayList e consultas SQL, analisando ciclos.
+              </p>
+              <a
+                href="https://github.com/eoLucasS/Benchmark-de-Algoritmos-A3"
+                rel="noopener"
+                target="_blank"
+                id="benchmarkdealgoritmos"
+                >Visualizar projeto
+              </a>
+            </article>
 
-            <div class="progress">
-              <span class="skill">Python <i class="val">30% ESTUDANDO!!!!</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+            <article class="intervalCardReveal compilador">
+              <h3>Compilador</h3>
+              <p>Compilador de BASIC para C em Python com análise léxica, sintática e GUI interativa. Inclui entrada de código, tabela de símbolos e código compilado.
+              </p>
+              <a
+                href="https://github.com/eoLucasS/Compilador-A3"
+                rel="noopener"
+                target="_blank"
+                id="compilador"
+                >Visualizar projeto
+              </a>
+            </article>
 
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">43% ESTUDANDO!!!!</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+            <article class="intervalCardReveal none">
+              <h3>Em construção...</h3>
+              <p>
+                Working...
+              </p>
+            </article>
 
-            <div class="progress">
-              <span class="skill">SQl/MySQL <i class="val">ESTUDANDO!!!!</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
+            <article class="intervalCardReveal none">
+              <h3>Em construção...</h3>
+              <p>
+                Working...
+              </p>
+            </article>
           </div>
-
+          <a
+            href="https://github.com/eoLucasS?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            class="delayExtraBigReveal"
+            >Repositórios no GitHub</a
+          >
         </div>
+      </section>
 
-      </div>
-    </section>
-<section id="services" class="services">
-  <div class="container">
-    <div class="section-title" style="margin-bottom: 40px;">
-      <h2><strong>Projetos</strong></h2>
-      <p>Todos os meus projetos estão atualmente no meu <strong>GitHub</strong>. Clique no título de qualquer um deles para ser <strong>redirecionado</strong> ao projeto desejado.</p>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-layers"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/ForTech" target="_blank">ForTech</a></h4>
-        <p class="description">Projeto de uma empresa com o objetivo de fornecer consultoria e serviço de nuvem. O objetivo é garantir total suporte ao cliente através dos serviços de armazenamento.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-users-social"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/ForTechJobs" target="_blank">ForTechJobs</a></h4>
-        <p class="description">Projeto de uma empresa que conecta talentos das comunidades a empregos transformadores, tornando o mercado de trabalho inclusivo e proporcionando oportunidades igualitárias para todos.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-lock"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/gerador_de_senha" target="_blank">Gerador de Senha</a></h4>
-        <p class="description">Gerador de senha que combina letras Maiúsculas, Minúsculas e Caracteres Especiais, garantindo segurança e proteção.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-calculator"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/calculadora" target="_blank">Calculadora</a></h4>
-        <p class="description">Calculadora inovadora que registra histórico de cálculos, facilitando a análise de resultados anteriores e promovendo eficiência no trabalho com números. Uma ferramenta inclusiva que oferece oportunidades igualitárias a todos os usuários.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-video"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/netflix-login-template" target="_blank">Netflix Login Page</a></h4>
-        <p class="description">Template de login inspirado na renomada plataforma de streaming Netflix, proporcionando aos usuários uma experiência familiar e intuitiva.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-game-controller"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/snakegame" target="_blank">Snake Game</a></h4>
-        <p class="description">O snake game é um clássico dos jogos de arcade, onde você controla uma cobra e deve comer maçãs para aumentar seu tamanho. Desenvolvido usando HTML, CSS e JavaScript, o jogo proporciona uma experiência divertida e desafiadora.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-game"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/ponggame" target="_blank">Pong Game</a></h4>
-        <p class="description">É um jogo clássico reimaginado em um código Python divertido e interativo. Desafie suas habilidades em uma partida emocionante contra o computador. Baixe o executável e mergulhe nessa experiência nostálgica.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-microphone"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/PodcastSite" target="_blank">Podcast Site</a></h4>
-        <p class="description">Descubra um projeto web inovador dedicado aos amantes de podcasts. Explore episódios cativantes, mergulhe em discussões instigantes e mergulhe em uma experiência auditiva imersiva.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-code-alt"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS/LucasCode" target="_blank">Lucas Code</a></h4>
-        <p class="description">Lucas Code é a minha marca pessoal, um projeto criado para promover a ideia e o talento por trás dos sites que personalizei. Apresento o resultado do meu trabalho com orgulho, compartilhando minhas criações para inspirar a todos.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-question"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS" target="_blank">Em Breve</a></h4>
-        <p class="description">...</p>
-      </div>
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-        <div class="icon"><i class="icofont-question"></i></div>
-        <h4 class="title"><a href="https://github.com/eoLucasS" target="_blank">Em Breve</a></h4>
-        <p class="description">...</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="testimonials" class="testimonials section-bg">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Feedback / vouches</h2>
-    </div>
-
-    <div class="owl-carousel testimonials-carousel">
-      <div class="testimonial-item" data-aos="fade-up">
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Você tem todas as características que valorizo. É determinado, engajado, criativo e mostra o que realmente aprendeu com esses meses. O seu esforço é visto e será recompensado. Continue desempenhando um excelente trabalho!
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-        <a href="https://www.linkedin.com/in/sophia-hoffmann-sezraiber-573702261/" target="_blank">
-          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-          <h3>Sophia Hoffman</h3>
-        </a>
-        <h4>Estudante</h4>
-      </div>
-
-      <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Lucas é uma pessoa muito produtiva, trabalhadora, de mente aberta e com visão de futuro. Perfeccionista inteligente, ambicioso, enérgico e pró-ativo. O desejo de proficiência e educação faz de Lucas um recurso valioso para seu futuro.
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-        <a href="https://www.linkedin.com/in/felipe-pasquali-70293481/" target="_blank">
-          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-          <h3>Felipe Pasquali</h3>
-        </a>
-        <h4>Auxiliar Administrativo</h4>
-      </div>
-
-      <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Parabéns por sua dedicação e profissionalismo, características essas que são muito admiráveis! Você me ajudou muito, e tenho muito orgulho de tê-lo conhecido.
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-        <a href="https://www.linkedin.com/in/mateuspasquali/" target="_blank">
-          <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-          <h3>Mateus Pasquali</h3>
-        </a>
-        <h4>Estagiário</h4>
-      </div>
-
-      <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          O seu trabalho me surpreende a cada dia porque você se supera sempre. Parabéns pelo design que faz em PhotoShop!!!
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-        <a href="https://www.linkedin.com/in/nycolasagrgarcia/" target="_blank">
-          <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-          <h3>Nycolas Garcia</h3>
-        </a>
-        <h4>Estudante</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Entre em contato</h2>
-          <p>Se você quiser saber mais sobre mim ou meu trabalho, ou se quiser apenas dizer olá, me ligue ou envie um e-mail.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>São Paulo, Brazil</p>
+      <section id="s-security">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Segurança da Informação <span>.</span></h2>
+          <div id="security">
+            <article class="intervalCardReveal">
+              <div>
+                <img
+                  src="assets/icons/confidentiality.png"
+                  width="100px"
+                  height="100px"
+                  alt="ícone layers"
+                />
               </div>
+              <h3>Confidencialidade</h3>
+              <p>
+                Garante que as informações só sejam acessadas por pessoas autorizadas, evitando vazamentos ou acessos não permitidos.
+              </p>
+            </article>
 
-              <div class="email protect-email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p id="email-address"></p>
-              </div>                          
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+55 11 955801241</p>
+            <article class="intervalCardReveal">
+              <div>
+                <img
+                  src="assets/icons/integrity.png"
+                  width="100px"
+                  height="100px"
+                  alt="ícone código"
+                />
               </div>
+              <h3>Integridade</h3>
+              <p>
+                Assegura que as informações não sejam alteradas ou corrompidas, garantindo que os dados sejam precisos e confiáveis.
+              </p>
+            </article>
 
-            </div>
-
+            <article class="intervalCardReveal">
+              <div>
+                <img
+                  src="assets/icons/availability.png"
+                  width="100px"
+                  height="100px"
+                  alt="ícone imagem"
+                />
+              </div>
+              <h3>Disponibilidade</h3>
+              <p>
+                Assegura que os sistemas e dados estejam acessíveis aos usuários autorizados sempre que necessário, minimizando interrupções.
+              </p>
+            </article>
           </div>
-
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section id="s-skills">
+        <div class="grid-layout">
+          <div id="skills">
+            <article id="skills-text">
+              <h2 class="delaySmallReveal">Conhecimentos <span>.</span></h2>
+              <p class="delayMediumReveal changeDescription">
+                *passe o cursor do mouse no card para ler*
+              </p>
+            </article>
 
-  </main>
+            <div id="skills-cards">
+              <article class="kali intervalCardReveal">
+                <img
+                  src="assets/icons/kalilinux.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do kali"
+                />
+              </article>
+              <article class="windows intervalCardReveal">
+                <img
+                  src="assets/icons/windows.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do windows"
+                />
+              </article>
+              <article class="python intervalCardReveal">
+                <img
+                  src="assets/icons/python.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do python"
+                />
+              </article>
+              <article class="javascript intervalCardReveal">
+                <img
+                  src="assets/icons/js.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do javascript"
+                />
+              </article>
+              <article class="bash intervalCardReveal">
+                <img
+                  src="assets/icons/bash.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do bash"
+                />
+              </article>
+              <article class="burpsuite intervalCardReveal">
+                <img
+                  src="assets/icons/burpsuite.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do burpsuite"
+                />
+              </article>
+              <article class="git intervalCardReveal">
+                <img
+                  src="assets/icons/git.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do git"
+                />
+              </article>
+              <article class="nmap intervalCardReveal">
+                <img
+                  src="assets/icons/nmap.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do nmap"
+                />
+              </article>
 
+              <article class="metasploit intervalCardReveal">
+                <img
+                  src="assets/icons/metasploit.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do metasploit"
+                />
+              </article>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Lucas Lopes da Silva <span id="year"></span></strong>
-      </div>
-    </div>
-</footer>
+              <article class="nessus intervalCardReveal">
+                <img
+                  src="assets/icons/nessus.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do nessus"
+                />
+              </article>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var yearElement = document.getElementById("year");
-    var currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-  });
-</script>
+              <article class="sqlmap intervalCardReveal">
+                <img
+                  src="assets/icons/sqlmap.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do sqlmap"
+                />
+              </article>
 
-  <a href="index.html#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+              <article class="nikto intervalCardReveal">
+                <img
+                  src="assets/icons/nikto.png"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do nikto"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+      <footer>
+        <div class="grid-layout">
+          <p>
+            © <span id="current-year"></span> 
+            <a href="https://portfolio-lucaslopes.vercel.app/" rel="noopener" target="_blank">
+              portfolio-lucaslopes.vercel.app
+            </a>
+            | Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
 
-  <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 
 </body>
-
 </html>
