@@ -33,7 +33,7 @@ Decidi reconstruir do zero o portfolio anterior (que era HTML/CSS/JS puro) usand
 ## Preview
 
 <div align="center">
-  <img src="assets/image/preview.png" width="700" alt="Portfolio Preview" />
+  <img src="public/images/preview.png" width="700" alt="Portfolio Preview" />
 </div>
 
 ---
